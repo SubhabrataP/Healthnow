@@ -7,7 +7,7 @@ class Navbar extends Component {
     super(props, context);
 
     this.state = {
-    	user: 'AMRI Salt Lake'
+    	user: 'ABC'
     };
   }
 

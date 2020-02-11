@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import Sidebar from '../Sidebar';
+import AdminSidebar from './AdminSidebar';
 import Navbar from '../Navbar';
-import DepartmentList from './Departments/DepartmentList';
+import HospitalList from './HospitalList';
 
-class Hospital extends Component {
+class Admin extends Component {
 
 	constructor(props, context) {
 		super(props, context);
@@ -12,7 +12,7 @@ class Hospital extends Component {
 		var option = this.props.match.params.menuitem;
 
 		this.state = {
-			listitem: 'departments'
+			listitem: 'hospitallist'
 		};
 
 		console.log("item-->",this.state.listitem);
@@ -21,14 +21,14 @@ class Hospital extends Component {
 	render() {
 		return (
 			<div className="wrapper">
-				<Sidebar/>
+				<AdminSidebar/>
 				<div class="main-panel" id="main-panel">
 					<Navbar/>
-					{ (this.state.listitem == "departments") ? <DepartmentList/> : null}
+					{ (this.state.listitem == "hospitallist") ? <HospitalList /> : null}
 				</div>
 			</div>
 		);
 	}
 }
 
-export default Hospital;
+export default Admin;
