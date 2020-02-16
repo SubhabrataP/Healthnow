@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Hospital from './components/Hospital/Hospital';
 import Sidebar from './components/Sidebar';
 import Admin from './components/Admin/Admin';
+import AddHospital from './components/Admin/AddHospital';
 
 function App() {
   return (

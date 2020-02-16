@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 import AdminSidebar from './AdminSidebar';
 import Navbar from '../Navbar';
 import HospitalList from './HospitalList';
+import AddHospital from './AddHospital';
 
 class Admin extends Component {
 
@@ -12,7 +13,7 @@ class Admin extends Component {
 		var option = this.props.match.params.menuitem;
 
 		this.state = {
-			listitem: 'hospitallist'
+			listitem: 'addhospital'
 		};
 
 		console.log("item-->",this.state.listitem);
@@ -25,6 +26,7 @@ class Admin extends Component {
 				<div class="main-panel" id="main-panel">
 					<Navbar/>
 					{ (this.state.listitem == "hospitallist") ? <HospitalList /> : null}
+					{ (this.state.listitem == "addhospital") ? <AddHospital /> : null}
 				</div>
 			</div>
 		);
