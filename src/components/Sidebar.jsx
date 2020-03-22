@@ -40,9 +40,9 @@ class Sidebar extends Component {
               </Link>
             </li>
             <li>
-              <a href="./permission.html">
+              <a href="./userRole">
                 <i className="now-ui-icons education_atom"></i>
-                <p>Permissions</p>
+                <p>User Role</p>
               </a>
             </li>
             <li>

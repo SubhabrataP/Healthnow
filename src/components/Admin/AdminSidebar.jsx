@@ -46,7 +46,19 @@ class AdminSidebar extends Component {
             <li>
               <a href="./notifications.html">
                 <i className="now-ui-icons ui-1_bell-53"></i>
-                <p>Notifications</p>
+                <p>Departments</p>
+              </a>
+            </li>
+            <li>
+              <a href="./notifications.html">
+                <i className="now-ui-icons ui-1_bell-53"></i>
+                <p>User Roles</p>
+              </a>
+            </li>
+            <li>
+              <a href="./notifications.html">
+                <i className="now-ui-icons ui-1_bell-53"></i>
+                <p>Designation</p>
               </a>
             </li>
             <li>

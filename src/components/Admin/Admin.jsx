@@ -4,6 +4,7 @@ import AdminSidebar from './AdminSidebar';
 import Navbar from '../Navbar';
 import HospitalList from './HospitalList';
 import AddHospital from './AddHospital';
+import DepartmentList from '../Hospital/Departments/DepartmentList';
 
 class Admin extends Component {
 
@@ -13,7 +14,7 @@ class Admin extends Component {
 		var option = this.props.match.params.menuitem;
 
 		this.state = {
-			listitem: 'addhospital'
+			listitem: 'deptlist'
 		};
 
 		console.log("item-->",this.state.listitem);
@@ -27,6 +28,7 @@ class Admin extends Component {
 					<Navbar/>
 					{ (this.state.listitem == "hospitallist") ? <HospitalList /> : null}
 					{ (this.state.listitem == "addhospital") ? <AddHospital /> : null}
+					{ (this.state.listitem == "deptlist") ? <DepartmentList /> : null}
 				</div>
 			</div>
 		);
