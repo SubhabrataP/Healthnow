@@ -134,12 +134,12 @@ class UserRole extends Component {
 				        </button>
 				      </div>
 				      <div class="modal-body">
-				        <form>
-						  <div class="form-group">
+				        <div class="row">
+						  <div class="col-sm-12">
 						    <label for="exampleFormControlInput1">Name<span className="color-red">*</span></label>
 						    <input type="email" class="form-control" id="exampleFormControlInput1" />
 						  </div>
-						  <div class="form-group">
+						  <div class="col-sm-12">
 						    <label for="exampleFormControlTextarea1">Dpeartment<span className="color-red">*</span></label><br/>
 						    <select>
 						    	<option>Cardiology</option>
@@ -147,16 +147,16 @@ class UserRole extends Component {
 						    	<option>Gynocology</option>
 						    </select>
 						  </div>
-						  <div class="form-group">
+						  <div class="col-sm-12">
 						    <label for="exampleFormControlTextarea1">Permissions<span className="color-red">*</span></label><br/>
-							  	<select>
-						    		<option>Hospital Admin Access</option>
-						    		<option>Dept Admin Access</option>
-						    		<option>User Access</option>
-						    		<option>Role Create</option>
-						    	</select>
+							<input type="checkbox" name="inlineCheckOptions" id="check1" value="2" />
+							<label class="form-check-label pl-2" for="inlineRadio2">Hospital Admin Control</label><br/>
+							<input type="checkbox" name="inlineCheckOptions" id="check1" value="2" />
+							<label class="form-check-label pl-2" for="inlineRadio2">Hospital Department Control</label><br/>
+							<input type="checkbox" name="inlineCheckOptions" id="check1" value="2" />
+							<label class="form-check-label pl-2" for="inlineRadio2">Role Creation</label>
 						   </div>
-						   <div class="form-group">
+						   <div class="col-sm-6">
 						    <label for="exampleFormControlTextarea1">New Employee ?<span className="color-red">*</span></label><br/>
 							  	<div class="form-check form-check-inline">
 								  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
@@ -167,7 +167,7 @@ class UserRole extends Component {
 								  <label class="form-check-label" for="inlineRadio2">No</label>
 								</div>
 						   </div>
-						</form>
+						</div>
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
