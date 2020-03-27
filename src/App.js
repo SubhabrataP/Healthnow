@@ -12,9 +12,10 @@ function App() {
   return (
     <HashRouter>
           <Switch>
-            <Route path="/" exact component={Login} />
-            <Route path="/hospital/" exact component={Hospital} />
+            <Route path="/" exact component={Hospital} />
             <Route path="/hospital/:menuitem" exact component={Hospital} />
+            <Route path="/hospital/" exact component={Hospital} />
+            <Route path="/hospital/:userlist" exact component={Hospital} />
             <Route path="/admin/" exact component={Admin} />   
             <Route path="/admin/:menuitem" exact component={Admin} />
           </Switch>

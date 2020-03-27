@@ -31,9 +31,36 @@ class UserList extends Component {
         		<div className="row">
         			<div className="card">
         			  <div class="card-header">
-					    <button type="button" className="btn buttonBg" data-toggle="modal" data-target="#deptModal">Add Role</button>
-					    <button type="button" className="btn btn-dark ml-2" data-toggle="modal" data-target="#deptModal">Add User</button>
+        			  	<div class="row">
+        			  		<div class="col-sm-2">
+					    		<button type="button" className="btn buttonBg" data-toggle="modal" data-target="#deptModal">Add User</button>
+					    	</div>
+					    	<div class="col-sm-4">
+					    		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search here" />
+					    	</div>
+					    
+						    <div class="col-sm-3">
+						    	<label class="pr-2" for="exampleFormControlTextarea1">Select :</label>
+							    <select style={{height: '80%', width: '80%'}}>
+							    	<option>All</option>
+							    	<option>Department</option>
+							    	<option>Role</option>
+							    </select>
+						    </div>
+						    <div class="col-sm-3">
+						    	<label class="pr-2" for="exampleFormControlTextarea1">Options :</label>
+							    <select style={{height: '80%', width: '70%'}}>
+							    	<option> -- </option>
+							    	<option>Cardiology</option>
+							    	<option>Medicine</option>
+
+							    	<option>Doctor</option>
+							    	<option>Nurse</option>
+							    </select>
+						    </div>
+						</div>    
 					  </div>
+
 					  <div className="card-body">
 					    <table className="table">
 						  <thead className="thead-info">

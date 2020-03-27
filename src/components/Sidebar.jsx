@@ -41,14 +41,37 @@ class Sidebar extends Component {
             </li>
             <li>
               <a href="./userRole">
-                <i className="now-ui-icons education_atom"></i>
-                <p>User Role</p>
+                <div class="dropdown">
+                  
+                  <div class="dropdown">
+                    <div type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i className="now-ui-icons education_atom"></i>
+                      <p>User Role</p>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">User Role</a>
+                      <a class="dropdown-item" href="#">Add User</a>
+                      <Link class="dropdown-item" to="/hospital/userlist">User List</Link>
+                    </div>
+                  </div>
+                </div>
+                
               </a>
             </li>
             <li>
               <a href="./notifications.html">
-                <i className="now-ui-icons ui-1_bell-53"></i>
-                <p>Notifications</p>
+                <div class="dropdown">
+                  <div class="dropdown">
+                    <div type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i className="now-ui-icons ui-1_bell-53"></i>
+                      <p>Permissions</p>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Create Permission</a>
+                      <a class="dropdown-item" href="#">Permission list</a>
+                    </div>
+                  </div>
+                </div>
               </a>
             </li>
             <li>

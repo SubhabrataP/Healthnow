@@ -5,17 +5,21 @@ import Navbar from '../Navbar';
 import DepartmentList from './Departments/DepartmentList';
 import UserRole from './UserRole/UserRole';
 import UserList from './UserRole/UserList';
+import AddUser from './UserRole/AddUser';
+import PermissionList from './Permissions/PermissionList';
+import AddPermission from './Permissions/AddPermission';
 
 class Hospital extends Component {
 
 	constructor(props, context) {
 		super(props, context);
 
-		var option = this.props.match.params.userlist;
+		var option = this.props.match.params.menuitem;
+		console.log("option ", option);
 
 
 		this.state = {
-			listitem: 'userlist',
+			listitem: option,
 			userlist: option
 		};
 
@@ -31,6 +35,9 @@ class Hospital extends Component {
 					{ (this.state.listitem == "departments") ? <DepartmentList/> : null}
 					{ (this.state.listitem == "userrole") ? <UserRole /> : null}
 					{ (this.state.listitem == "userlist") ? <UserList /> : null}
+					{ (this.state.listitem == "adduser") ? <AddUser /> : null}
+					{ (this.state.listitem == "permissionlist") ? <PermissionList /> : null}
+					{ (this.state.listitem == "addpermission") ? <AddPermission /> : null}
 				</div>
 			</div>
 		);
